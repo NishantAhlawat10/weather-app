@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Atmosphere</h1>
+      <p>Precision Weather Insights</p>
+    </header>
+    <div class="user-input">
+      <input
+        type="text"
+        id="search"
+        placeholder="Enter city name..."
+        autocomplete="off"
+        required
+      />
+      <ul id="suggestions"></ul>
+    </div>
+    <div id="weather-container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+*,
+*::begin,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #0b0b0b;
+  --light-dark-color: #1a1a1a;
+  --inner-card: #262626;
+
+  --white-color: #fff;
+  --light-white: #d1d5db;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px;
+  margin: 0;
+  background-color: var(--dark-color);
+}
+
+header {
+  position: relative;
+  top: 0;
+}
+header h1,
+p {
+  margin: 0;
+}
+
+header h1 {
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+header p {
+  color: var(--light-white);
+  font-size: 15px;
+}
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#search,
+#suggestions {
+  width: 100%;
+}
+
+#search {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--light-dark-color);
+  color: var(--white-color);
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: var(--light-dark-color);
+}
+
+#search:focus {
+  outline: none;
+  border: 1px solid green;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.6);
+}
+
+#suggestions {
+  margin: 5px 0;
+  background-color: var(--light-dark-color);
+  padding: 10px;
+  list-style: none;
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.city-name {
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+.city-name:hover {
+  background-color: #334155;
+}
+#suggestions {
+  display: none;
+}
+
+#weather-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: var(--light-white);
+  background-color: var(--light-dark-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 10px;
+  width: 250px;
+  min-height: 250px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--inner-card);
+}
+
+.weather-info h3 {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--inner-card);
+}
+
+.weather-info h2 {
+  font-size: 25px;
+}
